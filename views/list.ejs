@@ -4,7 +4,7 @@
     </div>
 <br>
 
-    <div>
+    <div id="extrawurscht">
       <form id="categories" method="get">
         <button type="text" name="work" class="box item categories" formaction="/work" onclick="zitate()">Zitate</button>
         <button type="text" name="etc" class="box item categories" formaction="/etc" onclick="gerüchte()">Gerüchte</button>
@@ -22,7 +22,7 @@
       <% }) %>
 
       <form class="item" action="/<%= category %>" method="post">
-        <input type="text" name="newItem" placeholder="Add new item" autocomplete="off" id="placeholder">
+        <input type="text" name="newItem" placeholder="Add new item" autocomplete="off" id="placeholder" autofocus>
         <button type="submit" name="addButton" class="round-button" value=<%= category %>>+</button>
       </form>
     </div>
