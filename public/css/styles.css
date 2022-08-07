@@ -42,7 +42,7 @@ h1 {
 }
 
 #heading:hover {
-    cursor: wait;
+    cursor: auto;
 }
 
 .item {
@@ -125,5 +125,5 @@ footer {
 }
 
 .extrawurscht {
-    background-color: white;
+    background-color: #424141;
 }
