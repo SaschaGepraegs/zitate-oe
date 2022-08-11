@@ -39,7 +39,7 @@ const Etc = mongoose.model("etcItem", etcSchema);
 
 app.route("/")
     .get((req, res) => {
-        res.redirect("/work");
+        res.redirect("/etc");
     });
 
 app.route("/:itemCategory")
@@ -47,13 +47,7 @@ app.route("/:itemCategory")
         const category = req.params.itemCategory;
 
         if (category === "work") {
-            const etc = Work.find((err, foundItems) => {
-                res.render("list", {
-                    itemsList: foundItems,
-                    day: today,
-                    category: category
-                });
-            })
+            res.redirect("/etc");
         } else if (category === "etc") {
             const etc = Etc.find((err, foundItems) => {
                 res.render("list", {

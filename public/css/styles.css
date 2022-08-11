@@ -5,16 +5,20 @@ html {
 }
 
 h1 {
-    color: #fff;
+    color: white;
     padding: 10px;
     margin-bottom: 0;
+    position: sticky;
 }
 
 .box {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 0px auto;
     background: #424141;
     border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .box:hover {
@@ -31,14 +35,18 @@ h1 {
     color: #fff;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 #heading {
-    background-color: #424141;
+    background-image: url("./img/gradient.jpg");
+    background-size: cover;
+    background-color: white;
     text-align: center;
     margin-bottom: 0;
     font-family: "Roboto", sans-serif;
+    z-index: 10000;
+    color: white;
 }
 
 #heading:hover {

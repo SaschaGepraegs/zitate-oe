@@ -1,6 +1,6 @@
 <%- include("header") -%>
     <div class="box" id="heading">
-        <h1 id="text123">Bitte wähle aus, was du hochladen möchtest</h1>
+        <h1 id="text123">Die geniale Gerüchteliste</h1>
     </div>
 <br>
 <title>lol</title>
@@ -9,8 +9,6 @@
 
     <div id="extrawurscht">
       <form id="categories" method="get">
-        <button type="text" name="work" class="box item categories" formaction="/work" onclick="zitate()">Zitate</button>
-        <button type="text" name="etc" class="box item categories" formaction="/etc" onclick="gerüchte()">Gerüchte</button>
       </form>
     </div>
 
@@ -18,7 +16,6 @@
       <% itemsList.forEach((item) => { %>
         <form action="/delete/<%= category %>" method="post">
           <div class="item">
-            <input type="checkbox" name="checkbox" value=<%= item._id %> onChange="this.form.submit()">
             <p name="item" style="font-family: "Roboto", sans-serif;"><%= item.name %></p>
           </div>
         </form>
