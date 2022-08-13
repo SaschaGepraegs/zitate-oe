@@ -1,6 +1,6 @@
 <%- include("header") -%>
     <div class="box" id="heading">
-        <h1 id="text123">Die geniale Gerüchteliste</h1>
+        <h1 id="text123">Gerüchte</h1>
     </div>
 <br>
 <title>lol</title>
@@ -32,7 +32,6 @@
 var ausgewählt = localStorage.getItem("ausgewählt");
 
 if(ausgewählt != null) {
-document.getElementById("text123").innerHTML = ausgewählt;
 document.getElementById("placeholder").placeholder = "Bitte "+ ausgewählt + " eingeben";
 }
 
