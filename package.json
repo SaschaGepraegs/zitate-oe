@@ -13,7 +13,7 @@
         "node": "12.16.2"
     },
     "dependencies": {
-        "@vercel/node": "^2.5.7",
+        "@vercel/node": "^2.5.8",
         "body-parser": "^1.19.0",
         "ejs": "^3.0.2",
         "express": "^4.17.1",
