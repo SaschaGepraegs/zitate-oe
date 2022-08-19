@@ -13,7 +13,7 @@ const today = date.getDate();
 
 /* ------------------------------------ Set up database ------------------------------------ */
 
-mongoose.connect("mongodb+srv://OkaIstCool:IchAberAuch@cluster0.lklafl8.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB_LINK , { useNewUrlParser: true, useUnifiedTopology: true });
 
 const workSchema = {
     name: String,
